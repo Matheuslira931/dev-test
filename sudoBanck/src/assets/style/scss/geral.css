@@ -1,7 +1,170 @@
-html, body {
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth;
-    color: #000000;
-    font-size: 18px;
+html,
+body {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  color: #000;
+}
+
+:root {
+  --main-color-btn: linear-gradient(253.98deg, #9c59f3 8.07%, #6051ec 108.12%);
+  --main-color-font: rgba(0, 0, 0, 0.8);
+  --sec-color-font: #a663fc;
+  --the-color-font: #ffffff;
+  --for-color-font: #898989;
+  --icon-color: #c0c0c0;
+}
+
+/* HEADER */
+.logo_navbar {
+  width: 68px;
+  height: 35px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--sec-color-font);
+  font-size: 15px;
+}
+
+.nav-item {
+  margin: 15px 0px;
+}
+
+.space-btn {
+  margin-right: 15px;
+}
+
+.btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--the-color-font);
+  width: 130px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 400;
+  border: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+
+.backgroundHalf {
+  color: var(--sec-color-font);
+  border: 1px solid;
+}
+
+.backgroundHalf:hover {
+  background: var(--main-color-btn);
+  color: var(--the-color-font);
+}
+
+.backgroundFull {
+  background: var(--main-color-btn);
+  color: var(--the-color-font);
+}
+
+.backgroundFull:hover {
+  color: var(--sec-color-font);
+  background: var(--the-color-font);
+  border: 1px solid;
+}
+
+.background-modal {
+  background: var(--main-color-btn);
+  padding: 50px 0px;
+}
+
+.clone-space {
+  display: block;
+  margin: -0.5rem -0.5rem -0.5rem auto;
+  margin-top: -45px;
+  margin-bottom: 25px;
+  filter: invert(98%) sepia(46%) saturate(2%) hue-rotate(160deg) brightness(113%) contrast(100%);
+  -webkit-filter: invert(98%) sepia(46%) saturate(2%) hue-rotate(160deg) brightness(113%) contrast(100%);
+}
+
+.clone-space:hover {
+  filter: invert(98%) sepia(46%) saturate(2%) hue-rotate(160deg) brightness(113%) contrast(100%);
+}
+
+.card-modal {
+  padding: 20px 40px;
+  box-shadow: 4px 4px 28px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  max-width: 612px;
+  margin: auto;
+}
+
+.title-card {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--for-color-font);
+}
+
+.label-form-contact {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--for-color-font);
+}
+
+.input-container i {
+  position: absolute;
+}
+
+.input-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon-default,
+.icon-defaultModal {
+  padding: 13px 15px;
+  color: var(--icon-color);
+}
+
+.input-contact {
+  padding-left: 35px;
+  font-size: 13px;
+  font-weight: 600;
+  height: calc(2.25rem + 5px);
+  color: var(--for-color-font);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+}
+
+.text-contact {
+  padding: 10px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--for-color-font);
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+}
+
+.input-service {
+  padding: 0.375rem 0.75rem;
+}
+
+.input-contact:focus {
+  border-color: var(--sec-color-font);
+  box-shadow: none;
+}
+
+.btn-send-submit {
+  font-weight: bold;
+  margin: auto;
 }
