@@ -7,42 +7,76 @@
 
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 769.98px) {
+@media screen and (max-width: 600px) {
+  .column_oppor {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 
+  .position-inside-oppor {
+    text-align: center;
+  }
+
+  .btn-default {
+    margin: auto;
+  }
+
+  .position-about, #section_4 .position-about, .position-top-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section_4 .position-about {
+    flex-direction: column-reverse;
+  }
+
+  .positon-img-about, .position-inside-s-3  {
+    width: 100%;
+    margin: 25px 0px;
+  }
+
+  .img-about {
+    width: 100%;
+  }
+
+  .navbar-footer, .position-nav-footer, .position-logo-center {
+    width: 100%;
+  }
+
+  .position-logo-center {
+    margin-left: 0;
+    margin: 15px 0px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 812.98px) {
-
+  .position-title-opor {
+    width: 100%;
+  }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (max-width: 991.98px) {
 
 }
-
-/* Large devices (desktops, 1024px and up) */
 
 @media (max-width: 1024.98px) {
 
 }
 
-/* Large devices (desktops, 1250px and up) */
 @media (max-width: 1250.98px) {
 
 }
 
-/* Large devices (desktops, 1366px and up) */
 @media (max-width: 1366.98px) {
 
 }
 
-/* Large devices (desktops, 1366px and up) */
 @media (max-width: 2560.98px) {
 
 }
 
-/* Large devices (desktops, 3840px and up) */
 @media (min-width: 3839.98px) {
 
 }
