@@ -24,9 +24,9 @@
           <i class="fa fa-bars nav_btn"></i>
       </div>
       <div class="mobile_nav_items">
-          <a href="extrato.php" class="saldo-nav"><span>Saldo: R$ 0</span></a>
-          <a href="home.php"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
-          <a href="extrato.php"><i class="fas fa-search"></i><span>Extrato</span></a>
+          <a href="extrato" class="saldo-nav"><span>Saldo: R$ 0</span></a>
+          <a href="home"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
+          <a href="extrato"><i class="fas fa-search"></i><span>Extrato</span></a>
           <a data-bs-toggle="modal" data-bs-target="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
       </div>
   </div>
@@ -34,13 +34,30 @@
 
   <!--SIDEBAR-->
   <div class="sidebar">
-      <a href="extrato.php" class="saldo-nav"><span>Saldo: R$ 0</span></a>
-      <a href="home.php"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
-      <a href="extrato.php"><i class="fas fa-search"></i><span>Extrato</span></a>
+      <a href="extrato" class="saldo-nav"><span>Saldo: R$ 0</span></a>
+      <a href="home"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
+      <a href="extrato"><i class="fas fa-search"></i><span>Extrato</span></a>
       <a data-bs-toggle="modal" href="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
   </div>
   <!--/SIDEBAR-->
 
   <div class="content">
     <router-outlet></router-outlet>
+  </div>
+
+  <!-- Modal Dashboar -->
+  <div class="modal fade" id="modalTermos" tabindex="-1" aria-labelledby="modalLogarLabel" aria-hidden="true">
+    <div class="modal-dialog mw-100 w-75">
+        <div class="modal-content">
+            <div class="background-modal">
+                <div class="modal-body">
+                    <button type="button" class="btn-close clone-space" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="card-modal card-termo">
+                        <p class="term-modal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <button type="submit" class="btn-default btn-send-send backgroundFull">ACEITO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   </div>
