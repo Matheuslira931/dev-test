@@ -1,0 +1,46 @@
+  <input type="checkbox" id="check">
+    <!--NAVHEADER-->
+    <header class="header-nav">
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="position_top_area">
+            <div class="left_area">
+                <img class="img-logo-dash" src="/assets/img/geral/logo.png" />
+            </div>
+            <div class="right_area">
+                <p class="name-user">NOME DO USUÁRIO</p>
+                <a class="btn-default backgroundFull btn-back" href="#"><i class="space-btn fas fa-chevron-left"></i>Sair</a>
+            </div>
+        </div>
+
+    </header>
+  <!--/NAVHEADER-->
+
+  <!--MOBILE-->
+    <div class="mobile_nav">
+      <div class="nav_bar">
+          <p class="name-user-m">NOME DO USUÁRIO</p>
+          <i class="fa fa-bars nav_btn"></i>
+      </div>
+      <div class="mobile_nav_items">
+          <a href="extrato.php" class="saldo-nav"><span>Saldo: R$ 0</span></a>
+          <a href="home.php"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
+          <a href="extrato.php"><i class="fas fa-search"></i><span>Extrato</span></a>
+          <a data-bs-toggle="modal" data-bs-target="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
+      </div>
+  </div>
+  <!--/MOBILE-->
+
+  <!--SIDEBAR-->
+  <div class="sidebar">
+      <a href="extrato.php" class="saldo-nav"><span>Saldo: R$ 0</span></a>
+      <a href="home.php"><i class="fas fa-laptop"></i><span>Dashboard</span></a>
+      <a href="extrato.php"><i class="fas fa-search"></i><span>Extrato</span></a>
+      <a data-bs-toggle="modal" href="#modalTermos"><i class="fas fa-check-circle"></i><span>Confirmar Termos</span></a>
+  </div>
+  <!--/SIDEBAR-->
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>

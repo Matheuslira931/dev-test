@@ -1,3 +1,5 @@
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 import { SiteRouting } from './site-routing.module';
 import { RouterModule } from '@angular/router';
 import { BodyComponent } from './body/body.component';
@@ -10,12 +12,14 @@ import { SiteComponent } from './site.component';
 @NgModule({
   declarations: [
     SiteComponent,
-    BodyComponent
+    BodyComponent,
+    HeaderComponent,
+    FooterComponent
 
   ],
   imports: [
     CommonModule,
-    RouterModule.forRoot(SiteRouting)
+    RouterModule.forChild(SiteRouting)
   ]
 })
 export class SiteModule { }
