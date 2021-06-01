@@ -23,5 +23,5 @@ Tecnologias utilizada pelo sistema {
 
     Projeto teste, proposto pela empresa 4Cadia no intuito de conheço o participante e sua capacidades.
     
-    Algumas funcionalidades não foram desenvolvidas, como API para consumir os dados de usuário, Função registrar & extrato. devido ao tempo e alguns problemas pessoais fiz o máx. que pode, mas claro podendo ser sempre melhor!
+    Algumas funcionalidades não foram desenvolvidas, como API para consumir os dados de usuário, Função registrar & extrato. devido ao tempo e alguns problemas pessoais fiz o máx. que pode no tempo determinado de uma semana, mas claro podendo ser sempre melhor!
 
