@@ -37,24 +37,7 @@ export class HeaderComponent implements OnInit {
       }else {
         this.message = "Preencha os campos";
       }
-      if(item.email == this.email) {
-        localStorage.setItem('loggedUser', JSON.stringify(item));
-        this.user = localStorage.getItem('loggedUser');
-        this.user = JSON.parse(this.user);
-        this.router.navigate(['/dashboard']);
-        $('#modalLogar').modal('hide');
-      }else {
-        this.message = "verifique o e-mail";
-      }
-      if(item.password == this.password) {
-        localStorage.setItem('loggedUser', JSON.stringify(item));
-        this.user = localStorage.getItem('loggedUser');
-        this.user = JSON.parse(this.user);
-        this.router.navigate(['/dashboard']);
-        $('#modalLogar').modal('hide');
-      }else {
-        this.message = "Senha errada";
-      }
+
     });
   }
 
