@@ -7,6 +7,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { SiteComponent } from './site.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { SiteComponent } from './site.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule.forChild(SiteRouting)
   ]
 })
