@@ -28,15 +28,30 @@ export class HeaderComponent implements OnInit {
 
   public logar() {
     USERS.users.forEach((item: { email: any; password: any; }) => {
-      if(item.email == this.email && item.password == this.password) {
+
+      if (item.email == this.email && item.email == null) {
+      }else {
+        this.message = "verifique e-mail";
+      }if (item.password == this.password && item.password == null) {
+
+      }else {
+        this.message = "verifique senha";
+      }if (item.email == this.email && item.password == this.password) {
         localStorage.setItem('loggedUser', JSON.stringify(item));
         this.user = localStorage.getItem('loggedUser');
         this.user = JSON.parse(this.user);
         this.router.navigate(['/dashboard']);
         $('#modalLogar').modal('hide');
-      }else {
-        this.message = "Preencha os campos";
       }
+      // if(item.email == this.email && item.password == this.password) {
+      //   localStorage.setItem('loggedUser', JSON.stringify(item));
+      //   this.user = localStorage.getItem('loggedUser');
+      //   this.user = JSON.parse(this.user);
+      //   this.router.navigate(['/dashboard']);
+      //   $('#modalLogar').modal('hide');
+      // }else {
+      //   this.message = "Preencha os campos";
+      // }
 
     });
   }
